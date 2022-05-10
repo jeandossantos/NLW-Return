@@ -4,12 +4,14 @@
   "description": "",
   "main": "src/server.ts",
   "scripts": {
-    "start": "ts-node-dev --rs --respawn --transpile-only src/server.ts",
+    "dev": "ts-node-dev --rs --respawn --transpile-only src/server.ts",
+    "start": "node dist/server.js",
+    "build": "npx tsc",
     "test": "jest"
   },
   "keywords": [],
   "author": "jeanddg@hotmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@swc/core": "^1.2.179",
     "@swc/jest": "^0.2.21",
