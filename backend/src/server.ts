@@ -9,4 +9,4 @@ app.use(cors())
 app.use(express.json());
 app.use(routes);
 
-app.listen(port, () => console.log('Back-end is running on port 3001...'));
+app.listen(process.env.PORT || port, () => console.log('Back-end is running on port 3001...'));
